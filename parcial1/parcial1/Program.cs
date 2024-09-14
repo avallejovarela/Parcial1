@@ -12,6 +12,22 @@
         Console.Write("ingrese el valor de b ");
         double b = Convert.ToDouble(Console.ReadLine());
 
+        // posibilidades
+
+        if (a == 0)
+        {
+            if (b == 0)
+            {
+                Console.WriteLine("La ecuacion tiene infinitas soluciones");
+            }
+            else
+            {
+                Console.WriteLine("La ecuacion no tiene solución");
+            }
+        }
+        else {
+
+
 
     }
 }
