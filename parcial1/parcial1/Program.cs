@@ -25,7 +25,7 @@ public class Program
         const decimal sueldoBase = 2000000;
         const decimal comision = 10;
         const decimal extra = 10;
-        decimal totalComision, ventamasalta, promediocomision, venta1, venta2, venta3;
+        decimal totalComision, ventamasalta, promediocomision, venta1, venta2, venta3, comision1, comision2, comision3, totalcomision; 
 
         // datos de entrada
 
@@ -37,6 +37,14 @@ public class Program
 
         Console.Write("ingresa el valor de la venta 3: ");
         venta3 = Convert.ToDecimal(Console.ReadLine());
+
+        // calculo de las comisiones
+
+        comision1 = venta1 * (comision / 100);
+        comision2 = venta2 * (comision / 100);
+        comision3 = venta3 * (comision / 100);
+
+        totalComision = comision1 + comision2 + comision3;
 
 
 
