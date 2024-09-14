@@ -25,7 +25,14 @@
                 Console.WriteLine("La ecuacion no tiene solución");
             }
         }
-        else {
+        else
+        {
+            // solucion
+
+            double x = -b / a;
+            Console.WriteLine($"La solcion es: x = {x}");
+        }
+
 
 
 
