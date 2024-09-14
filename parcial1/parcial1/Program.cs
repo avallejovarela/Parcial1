@@ -24,8 +24,9 @@ public class Program
         //declaracion de constantes y variables
         const decimal sueldoBase = 2000000;
         const decimal comision = 10;
-        const decimal extra = 10;
-        decimal totalComision, ventamayorcomision, promediocomision, venta1, venta2, venta3, comision1, comision2, comision3, sueldototal; 
+        const decimal extra = 100000;
+        const decimal objetivo = 1000000;
+        decimal totalComision, ventamayorcomision, promediocomision, venta1, venta2, venta3, comision1, comision2, comision3, sueldototal, totalventa; 
 
         // datos de entrada
 
@@ -62,6 +63,24 @@ public class Program
             ventamayorcomision = comision3;
         }
 
+        // promedio de comisiones 
+
+        promediocomision = totalComision / 3;
+
+        // bono extra
+
+        totalventa = venta1 + venta2 + venta3;
+
+        if (totalventa >= objetivo)
+        {
+            sueldototal = +extra;
+        }
+
+        // mostrar los resultados
+        Console.WriteLine($"Comision total por la tres ventas {totalComision:C0}");
+        Console.WriteLine($"Sueldo total del mes por:{sueldototal:C0}");
+        Console.WriteLine($"la venta que genero mayor comision fue: {ventamayorcomision:C0}");
+        Console.WriteLine($"Promedio de las comisiones por las ventas es:  {promediocomision:C0}");
 
     }
 }
