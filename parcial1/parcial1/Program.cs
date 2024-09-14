@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System;
+using System.Security.Cryptography;
 
 public class Program
 {
@@ -24,7 +25,18 @@ public class Program
         const decimal sueldoBase = 2000000;
         const decimal comision = 10;
         const decimal extra = 10;
-        decimal totalComision, ventamasalta, promediocomision;
+        decimal totalComision, ventamasalta, promediocomision, venta1, venta2, venta3;
+
+        // datos de entrada
+
+        Console.Write("ingresa el valor de la venta 1: ");
+        venta1 = Convert.ToDecimal(Console.ReadLine());
+
+        Console.Write("ingresa el valor de la venta 2: ");
+        venta2 = Convert.ToDecimal(Console.ReadLine());
+
+        Console.Write("ingresa el valor de la venta 3: ");
+        venta3 = Convert.ToDecimal(Console.ReadLine());
 
 
 
