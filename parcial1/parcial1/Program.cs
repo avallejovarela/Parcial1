@@ -54,11 +54,11 @@ public class Program
         // venta con mayor comision
 
         ventamayorcomision = comision1;
-        if (comision2 > ventamayorcomision) ;
+        if (comision2 > ventamayorcomision)
         {
             ventamayorcomision = comision2;
         }
-        if (comision3 > comision1);
+        if (comision3 > comision1)
         {
             ventamayorcomision = comision3;
         }
@@ -78,9 +78,17 @@ public class Program
 
         // mostrar los resultados
         Console.WriteLine($"Comision total por la tres ventas {totalComision:C0}");
-        Console.WriteLine($"Sueldo total del mes por:{sueldototal:C0}");
+        Console.WriteLine($"Sueldo total del mes por:{sueldototal}");
         Console.WriteLine($"la venta que genero mayor comision fue: {ventamayorcomision:C0}");
         Console.WriteLine($"Promedio de las comisiones por las ventas es:  {promediocomision:C0}");
 
+        if (totalventa >= objetivo)
+        {
+            Console.WriteLine($"Haz alcanzado el objetivo y por ende has recibido un extra por $100.000 pesos");
+        }
+        else
+        {
+            Console.WriteLine("No haz alcanzado el objetivo y por ende no vas a recibir beneficio extra");
+        }
     }
 }
