@@ -25,7 +25,7 @@ public class Program
         const decimal sueldoBase = 2000000;
         const decimal comision = 10;
         const decimal extra = 10;
-        decimal totalComision, ventamasalta, promediocomision, venta1, venta2, venta3, comision1, comision2, comision3, totalcomision; 
+        decimal totalComision, ventamayorcomision, promediocomision, venta1, venta2, venta3, comision1, comision2, comision3, sueldototal; 
 
         // datos de entrada
 
@@ -46,6 +46,21 @@ public class Program
 
         totalComision = comision1 + comision2 + comision3;
 
+        // calculo del sueldo total
+
+        sueldototal = sueldoBase + totalComision;
+
+        // venta con mayor comision
+
+        ventamayorcomision = comision1;
+        if (comision2 > ventamayorcomision) ;
+        {
+            ventamayorcomision = comision2;
+        }
+        if (comision3 > comision1);
+        {
+            ventamayorcomision = comision3;
+        }
 
 
     }
